@@ -1,0 +1,209 @@
+/*
+* des: TM layout
+* author: liuyao
+* update: 2017/11/6
+*/
+
+
+// import base css
+@import "../base/lib";
+@import "../base/reset";
+@import "../base/common";
+@import "../base/atom";
+@import "../base/fonts";
+
+
+// 导航
+//================================================
+.nav{
+  height: 80px;
+  padding-top: 17px;
+  @include clearfix();
+
+  .logo{
+    float: left;
+  }
+  .nav-wrap{
+    float: right;
+    li{
+      float: left;
+    }
+    .on a{
+      border-bottom: 3px solid #3ec0b2;
+    }
+    a{
+      display: block;
+      margin-left: 50px;
+      font-size: 16px;
+      line-height: 40px;
+      color:#333;
+      &:hover{
+        border-bottom: 3px solid #3ec0b2;
+        text-decoration: none;
+      }
+    }
+  }
+
+
+
+
+
+}
+
+
+// banner
+//================================================
+.flag{
+  max-width: 100%;
+  img{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+// footer
+//================================================
+.wrap-footer{
+  background-color: #f0f0f0;
+}
+.footer{
+  padding: 40px 0;
+  text-align: center;
+  font-size: 14px;
+  color:#8e8989;
+  .qcode{
+    display: inline-block;
+    span{
+      display: inline-block;
+      width: 130px;
+      margin-right: 40px;
+      img{
+        margin-bottom: 6px;
+      }
+    }
+  }
+  .copyright{
+    margin-top: 30px;
+  }
+}
+
+
+
+
+
+// response for Mobile
+//================================================
+@media (max-width: 992px) {
+  .nav{
+    position: relative;
+    .nav-lst{
+      position: absolute;
+      top:60px;
+      right: -5px;
+      z-index: 99;
+
+      display: none;
+      padding: 10px 40px;
+      background-color: #fff;
+      box-shadow:2px 3px 10px 2px #ddd;
+      li{
+        float: none;
+      }
+      a{
+        margin-left: 0;
+        text-align: center;
+      }
+    }
+    .show.nav-lst{
+      display: block;
+    }
+
+
+    // nav-menu
+    .nav-menu {
+      position: relative;
+      float: right;
+      width: 18px;
+      height: 40px
+    }
+
+    .nav-menu>span {
+      position: absolute;
+      display: block;
+      height: 1px;
+      width: 17px;
+      background-color: #333;
+      -webkit-transition: all cubic-bezier(.4,.1,.165,.999) .3s;
+      -moz-transition: all cubic-bezier(.4,.1,.165,.999) .3s;
+      -o-transition: all cubic-bezier(.4,.1,.165,.999) .3s;
+      transition: all cubic-bezier(.4,.1,.165,.999) .3s;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -ms-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center
+    }
+
+    .nav-menu .line-1 {
+      top: 14px
+    }
+
+    .nav-menu .line-2 {
+      top: 20px
+    }
+
+    .nav-menu .line-3 {
+      top: 26px
+    }
+
+    .nav-menu-on .line-1 {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg)
+    }
+
+    .nav-menu-on .line-2 {
+      opacity: 0
+    }
+
+    .nav-menu-on .line-3 {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg)
+    }
+  }
+
+
+  //首页
+  //==================================================
+  .floor-img{
+    width: 300px;
+  }
+  .floor-1{
+    background-size: 50% 25%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

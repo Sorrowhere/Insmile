@@ -1,0 +1,245 @@
+// button scss
+// required: _setting.scss, css3.scss
+
+@import "../base/lib";
+
+// variables
+$btnBaseClass: btn !default;
+$btnDisabledClass: disabled !default;
+
+// button size class
+//             className, height, padding, fontSize
+$btnSizeMini:  xs       22px    10px     12px  !default;
+$btnSizeSmall: s      24px    15px     12px  !default;
+$btnSizeMid:   m        30px    20px     14px  !default;
+$btnSizeBig:   l        34px    25px     14px  !default;
+$btnSizeBiger: xl      38px    25px     18px  !default;
+$btnSizeGroup: $btnSizeMini, $btnSizeSmall, $btnSizeMid, $btnSizeBig, $btnSizeBiger !default;
+// button color class 
+//               className,   fontColor, backgroundColor
+$btnColorRed:    primary      #fff       #e0463e;
+$btnColorYellow: warn         #674800    #ffdb1a;
+$btnColorBlue:   info         #fff       #49e;
+$btnColorGray:   default      #666       #f4f4f4;
+$btnColorWhite:  blank        #333       #fff;
+$btnColorGroup:  $btnColorRed $btnColorYellow $btnColorBlue $btnColorGray $btnColorWhite!default;
+
+
+// button base style
+
+.#{$btnBaseClass}{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	padding: 0;
+	border: none;
+	@include border-radius(2px);
+	@if $ie6 {
+		_margin-bottom:1px;
+	}
+}
+button.#{$btnBaseClass},
+input.#{$btnBaseClass}{
+	margin: 0;
+	@if $lte7 {
+		*overflow: visible;
+		*filter: chroma(color=$black);
+	}
+	// for firefox
+	&::-moz-focus-inner{
+		border: none;
+		padding: 0;
+	}
+	&:focus{
+		outline: none;
+	}
+}
+a.#{$btnBaseClass}:hover{
+	text-decoration: none;
+}
+
+// button color style
+@each $colorItem in $btnColorGroup{
+	$colorClass: nth($colorItem,1);
+	$fontColor: nth($colorItem,2);
+	$backgroundColor: nth($colorItem,3);
+
+	$btnColorClass: $btnBaseClass+'-'+$colorClass;
+
+	.#{$btnColorClass}{
+		color: $fontColor;
+		background-color: $backgroundColor;
+        @include transition(all ease .3s);
+		&:link,
+		&:visited{
+			color: $fontColor;
+		}
+		&:hover{
+			background-color: darken($backgroundColor,15%);
+			color: $fontColor;
+		}
+		&:active{
+            background-color: lighten($backgroundColor,5%);
+		}
+		@if $btnColorClass == 'btn-blank'{
+			border: 1px solid #e0e0e0;
+            &:hover{
+              background: #49e;
+              border-color: #49e;
+              color: #fff;
+            }
+		}
+	}
+}
+
+// button size style
+@each $sizeItem in $btnSizeGroup{
+	$sizeClass: nth($sizeItem,1);
+	$height: nth($sizeItem,2);
+	$padding: nth($sizeItem,3);
+	$fontSize: nth($sizeItem,4);
+
+	$btnSizeClass: $btnBaseClass+'-'+$sizeClass;
+
+	.#{$btnSizeClass}{
+		height: $height - 2;
+		line-height: $height - 2;
+		padding: 0 $padding;
+		font-size: $fontSize;
+		@if $height > 26{
+			font-family: $fontYaHei;
+		}
+	}
+	button.#{$btnSizeClass},
+	input.#{$btnSizeClass}{
+		height: $height;
+		@if $ie6{
+			@if $sizeClass != 'mini'{
+				_height: $height - 5;
+			}@else{
+				_line-height: $height - 5;
+			}
+		}
+		@if $ie7{
+			@if $sizeClass != 'mini'{
+				*line-height: $height - 5;
+			}
+		}
+		
+	}
+}
+// button disabled
+.#{$btnDisabledClass},
+.#{$btnDisabledClass}:hover{
+	background-color: #e6e6e6;
+    border: none;
+	color: $grayLight;
+	cursor: not-allowed;
+	@include opacity(.8);
+}
+a.#{$btnDisabledClass}:link,
+a.#{$btnDisabledClass}:visited{
+	color: $grayLight;
+}
+// button with icon
+.btn-icon{
+	padding-left: 26px;
+	padding-right: 10px;
+	position: relative;
+}
+.btn-icon .icon{
+	position: absolute;
+	left: 10px;
+	top: 6px;
+	_display:block;
+	_top: 4px;
+}
+// button drop
+// textWidth: width with padding
+// 2px is border width
+$textWidth: 42px;
+$padding: 5px;
+$arrowWidth: 17px;
+$dropDownWidth: $textWidth + $arrowWidth +$padding * 2;
+$dropWidth: $dropDownWidth + 2px;
+
+.btn-drop{
+	display: inline-block;
+	_display: inline;
+	width: $dropDownWidth + 2px;
+}
+.btn-drop-current{
+	cursor: pointer;
+	border: 1px solid #bfbfbf;
+	height: 17px;
+	width: $dropDownWidth;
+	@include border-radius(2px);
+}
+.btn-drop-current a{
+	float: left;
+	line-height: 18px;
+	padding: 0 5px;
+	width: $textWidth;
+}
+.btn-drop-arrow{
+	float: left;
+	width: 16px;
+	height: $arrowWidth;
+	border-left: 1px solid #bfbfbf;
+	background-color: #fff;
+	position: relative;
+}
+.btn-drop-arrow i{
+	position: absolute;
+	height: 0;
+	width: 1px;
+	font-size: 0;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 3px 3px 0;
+	border-color: #808080 #fff #fff #fff;
+	background-color: #808080;
+	top: 7px;
+	left: 4px;
+}
+.btn-drop-current:hover{
+	background-color: #4078bb;
+	border-color: #3c7ac7 #4078bd #1f5699;
+}
+.btn-drop-current:hover .btn-drop-arrow{
+	border-left: 1px solid #216ca6;
+	background-color: transparent;
+}
+.btn-drop-current:hover .btn-drop-arrow i{
+	border-color: #fff #4078bb #4078bb #4078bb;
+}
+.btn-drop-current:hover a:link,
+.btn-drop-current:hover a:visited,
+.btn-drop-current:hover a:hover{
+	color: #fff;
+}
+.btn-drop-down{
+	position: absolute;
+	border: 1px solid #ccc;
+	border-top: none;
+	z-index: 9;
+	width: $dropDownWidth;
+}
+.btn-drop-down ul{
+	margin: 0 !important;
+}
+.btn-drop-down a{
+	display: block;
+	height: 19px;
+	line-height: 19px;
+	padding: 0 5px;
+}
+.btn-drop-down a:link,
+.btn-drop-down a:visited{
+	color: #666;
+}
+.btn-drop-down a:hover{
+	color: #333;
+	background-color: #dfecf5;
+}

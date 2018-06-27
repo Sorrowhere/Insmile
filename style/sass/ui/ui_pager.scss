@@ -1,0 +1,173 @@
+/*
+* @des site page style
+* @author liw
+* @update 2013-08-13
+*/
+.page {
+  margin: 25px auto 0;
+  color: #333;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.page a:link,
+.page a:visited {
+  color: #333;
+}
+
+.page a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* page amount */
+.page .pageAmount {
+  float: left;
+  height: 26px;
+  line-height: 26px;
+}
+
+.page .pageAmount a,
+.page .pageAmount span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 18px;
+  text-align: center;
+  border: 1px solid #fff;
+}
+
+.page .pageAmount .now,
+.page .pageAmount a:hover {
+  border: 1px solid #dadada;
+  background: #f0f0f0;
+  text-decoration: none;
+  color: #333;
+}
+
+/* page nav */
+.page-nav-lst {
+  float: right;
+  height: 26px;
+  line-height: 26px;
+  margin-right: 10px;
+  word-spacing: -4px;
+  display: table;
+}
+
+.page-nav a,
+.page-nav .lnk {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 9px;
+  margin-left: -1px;
+  text-align: center;
+  font-family: Arial;
+  border: 1px solid #dadada;
+  font-weight: bold;
+  vertical-align: middle;
+  *display: inline;
+  *height: 23px;
+  *line-height: 23px;
+  *zoom: 1;
+  *margin-left: 0;
+  word-spacing: 0;
+  /*clear inline-block margin*/
+}
+
+.page-nav-lst .now,
+.page-nav-lst .now:hover {
+  background: #1770b4;
+  color: #fff;
+  border-color: #1770b4;
+  text-decoration: none;
+}
+
+.page-nav-lst a:hover {
+  background: #f0f0f0;
+  border-color: #dadada;
+  color: #333;
+  text-decoration: none;
+}
+
+.page-nav-lst .now:link,
+.page-nav-lst .now:visited {
+  color: #fff;
+  cursor: default;
+}
+
+.page-nav-lst .now:hover {
+  text-decoration: none;
+}
+
+.page-nav-lst .nextPage,
+.page-nav-lst .prePage,
+.page-nav .pageBtn {
+  background-color: #f6f6f6;
+  border: 1px solid #dadada;
+  font-weight: normal;
+}
+
+.page-nav-lst .nextPage:hover,
+.page-nav-lst .prePage:hover,
+.page-nav .pageBtn:hover {
+  background: #f6f6f6;
+  border-color: #dadada;
+}
+
+.page-nav-lst .prePage {
+  *margin-right: -3px;
+}
+
+.page-nav-form {
+  float: right;
+  margin-top: 3px;
+  line-height: 22px;
+  vertical-align: middle;
+}
+
+.page-nav-form .txt-mini {
+  width: 36px;
+  margin: 0 3px;
+}
+
+.page-nav-form .pageBtn {
+  height: 26px;
+  line-height: 24px;
+  padding: 0 6px;
+  margin: 0;
+  color: #666;
+  outline: none;
+  cursor: pointer;
+}
+
+.page-nav-form .pageBtn:hover {
+  text-decoration: none;
+}
+
+.page-nav-form .text {
+  height: 22px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  padding: 0 2px;
+  overflow: hidden;
+}
+
+.page-nav-form .txt {
+  height: 24px;
+  line-height: 24px;
+}
+
+#goToPageSpan {
+  display: inline-block;
+}
+
+/*page-primary*/
+.page-primary .page-nav-lst a.now {
+  border-color: #e41b2e;
+  background-color: #e41b2e;
+}
+.page-primary .page-nav-lst a.now:hover {
+  background-color: #e41b2e;
+}
