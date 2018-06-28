@@ -31,7 +31,7 @@
 }
 .m-r .m-img {
   float: left;
-  margin-left: -510px;
+  margin-left: -550px;
 }
 
 .m-l {
@@ -51,7 +51,46 @@
   margin: -35px 0 40px;
   background-color: #ebebeb;
 }
+.m-president .m-img {
+  margin-left: -510px;
+}
 
 .m-chief {
   margin-bottom: 50px;
+}
+.m-chief .tit-nor {
+  margin-top: 120px;
+}
+
+@media (max-width: 992px) {
+  .member .tit-nor {
+    margin: 10px 0;
+  }
+  .member .m-img {
+    width: 400px;
+  }
+  .member .m-img img {
+    width: 100%;
+  }
+
+  .m-r {
+    padding-left: 430px;
+  }
+  .m-r .m-img {
+    margin-left: -440px;
+  }
+
+  .m-president {
+    padding-left: 310px;
+  }
+  .m-president .tit-nor {
+    margin: 40px 0;
+  }
+  .m-president .m-img {
+    width: 360px;
+    margin-left: -300px;
+  }
+  .m-president .m-bd {
+    margin-top: -40px;
+  }
 }

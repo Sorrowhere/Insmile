@@ -32,7 +32,7 @@
   padding-left: 530px;
   .m-img{
     float: left;
-    margin-left: -510px;
+    margin-left: -550px;
   }
 }
 .m-l{
@@ -51,7 +51,53 @@
 .m-president{
   margin: -35px 0 40px;
   background-color: #ebebeb;
+  .m-img{
+    margin-left: -510px;
+  }
 }
 .m-chief{
   margin-bottom: 50px;
+  .tit-nor{
+    margin-top: 120px;
+  }
+}
+
+
+
+// response for Mobile
+//================================================
+@media (max-width: 992px) {
+
+  .member{
+    .tit-nor{
+      margin: 10px 0;
+    }
+    .m-img{
+      width: 400px;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .m-r{
+    padding-left: 430px;
+    .m-img{
+      margin-left: -440px;
+    }
+  }
+
+  .m-president{
+    padding-left: 310px;
+    .tit-nor{
+      margin: 40px 0;
+    }
+    .m-img{
+      width: 360px;
+      margin-left: -300px;
+    }
+    .m-bd{
+      margin-top: -40px;
+    }
+  }
+
 }
