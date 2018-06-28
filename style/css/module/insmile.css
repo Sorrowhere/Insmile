@@ -9215,6 +9215,10 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
+body {
+  color: #4b4949;
+}
+
 .nav {
   height: 80px;
   padding-top: 17px;

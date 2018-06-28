@@ -14,4 +14,12 @@ $(function(){
         $('.tab-con > section').eq(tabIndex).addClass('active').siblings().removeClass('active');
     });
 
+
+    var $filterMenu = $('.filter a');
+    $filterMenu.click(function(){
+        $(this).addClass('on').siblings().removeClass('on');
+        var areaIndex = $filterMenu.index(this);
+        $('.area-box > .node').eq(areaIndex).show().siblings().hide();
+    });
+
 })

@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/*
+* des: insmile contact page
+* author: liuyao
+* update: 2018/6/28
+*/
+.filter {
+  padding: 30px 0;
+  border-bottom: 1px solid #ebedec;
+}
+.filter a {
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 8px;
+  margin-right: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #4b4949;
+}
+.filter a:hover,
+.filter .on {
+  color: #fff;
+  background-color: #3ec0b2;
+}
+
+.node .wrap {
+  margin: 40px 0;
+}
+
+.node {
+  display: none;
+}
+
+.mode {
+  padding: 40px 0 40px 50px;
+}
+.mode:before, .mode:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+.mode:after {
+  clear: both;
+}
+.mode .mode-img {
+  padding: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 30px 5px #eeeaea;
+}
+.mode .mode-img img {
+  width: 100%;
+}
+.mode .mode-info .area {
+  font-size: 24px;
+  font-weight: normal;
+}
+.mode .mode-info h2 {
+  font-size: 48px;
+}
+.mode .mode-info h4 {
+  font-size: 30px;
+  font-weight: normal;
+}
+.mode .more {
+  display: inline-block;
+  margin-top: 50px;
+  font-size: 16px;
+  color: #3ec0b2;
+}
+
+.mode-l {
+  padding-left: 530px;
+}
+.mode-l .mode-img {
+  float: left;
+  margin-left: -480px;
+}
+.mode-l .mode-info {
+  padding-top: 50px;
+}
+
+.mode-r {
+  padding-right: 550px;
+}
+.mode-r .mode-img {
+  float: right;
+  margin-top: -80px;
+  margin-right: -500px;
+}
+.mode-r .mode-info {
+  text-align: right;
+}
+
+@media (max-width: 992px) {
+  .mode-img {
+    width: 300px;
+  }
+
+  .mode .mode-info .area {
+    font-size: 18px;
+  }
+  .mode .mode-info h2 {
+    font-size: 32px;
+  }
+  .mode .mode-info h4 {
+    font-size: 24px;
+  }
+  .mode .mode-info .more {
+    margin-top: 20px;
+  }
+
+  .mode-l {
+    padding-left: 350px;
+  }
+  .mode-l .mode-img {
+    float: left;
+    margin-left: -350px;
+  }
+  .mode-l .mode-info {
+    padding-top: 50px;
+  }
+
+  .mode-r {
+    padding-right: 380px;
+  }
+  .mode-r .mode-img {
+    float: right;
+    margin-top: -80px;
+    margin-right: -380px;
+  }
+  .mode-r .mode-info {
+    padding-top: 10px;
+    text-align: right;
+  }
+}
