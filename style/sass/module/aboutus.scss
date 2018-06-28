@@ -1,0 +1,63 @@
+/*
+* des: insmile case page
+* author: liuyao
+* update: 2018/6/28
+*/
+
+.wrap-aboutus {
+  padding: 60px 0 150px;
+  .sidebar {
+    a {
+      display: block;
+      margin-bottom: 40px;
+      font-size: 24px;
+      color: #4b4949;
+      &:hover {
+        b {
+          background-color: #3ec0b2;
+        }
+      }
+      b {
+        display: inline-block;
+        width: 11px;
+        height: 11px;
+        margin-right: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+    }
+    .on {
+      b {
+        background-color: #3ec0b2;
+      }
+    }
+  }
+}
+
+.content {
+  display: none;
+  margin-bottom: 100px;
+  .tit-nor {
+    margin-top: 0;
+    text-align: left;
+    .solid{
+      margin-top: 15px;
+    }
+  }
+  article {
+    font-size: 18px;
+    line-height: 30px;
+    color: #666;
+
+  }
+}
+.active{
+  display: block;
+}
+
+// response for Mobile
+//================================================
+@media (max-width: 992px) {
+
+}

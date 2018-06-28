@@ -542,6 +542,10 @@ textarea:-ms-input-placeholder {
   content: "\e601";
 }
 
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
 .nav {
   height: 80px;
   padding-top: 17px;

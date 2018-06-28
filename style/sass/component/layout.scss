@@ -13,6 +13,15 @@
 @import "../base/fonts";
 
 
+a{
+  &:link,
+  &:visited,
+  &:hover,
+  &:active{
+    text-decoration: none;
+  }
+}
+
 // 导航
 //================================================
 .nav{
