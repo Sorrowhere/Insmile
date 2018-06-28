@@ -49,6 +49,23 @@ body{
   background-color: #f8f8f8;
 }
 
+.tit-nor{
+  margin: 40px 0;
+  text-align: center;
+  h2{
+    font-size: 48px;
+    font-weight: normal;
+  }
+  .solid{
+    display: inline-block;
+    width: 40px;
+    height: 6px;
+    background-color: #3ec0b2;
+    border-radius: 5px;
+  }
+}
+
+
 .floor{
   @include clearfix();
   h2{
