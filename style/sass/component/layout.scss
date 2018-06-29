@@ -11,6 +11,7 @@
 @import "../base/common";
 @import "../base/atom";
 @import "../base/fonts";
+@import "../base/bootstrap";
 
 
 a{
@@ -24,6 +25,31 @@ a{
 body{
   color:#4b4949;
 }
+
+
+.wrap-gray{
+  background-color: #f8f8f8;
+}
+
+.tit-nor{
+  margin: 40px 0;
+  text-align: center;
+  h2{
+    font-size: 48px;
+    font-weight: normal;
+  }
+  .solid{
+    display: inline-block;
+    width: 40px;
+    height: 6px;
+    background-color: #3ec0b2;
+    border-radius: 5px;
+  }
+}
+
+
+
+
 // 导航
 //================================================
 .nav{

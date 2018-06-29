@@ -4,27 +4,10 @@
 * update: 2018/6/27
 */
 
-
-// import base css
-@import "../base/lib";
-@import "../base/bootstrap";
-@import "../base/reset";
-@import "../base/common";
-@import "../base/atom";
-@import "../base/fonts";
-
-
 // import component css
 @import "../component/layout";
 
-// import ui css
-@import "../ui/ui_button";
-@import "../ui/ui_pop";
-@import "../ui/ui_tip";
-@import "../ui/ui_form";
-@import "../ui/ui_tab_vo";
-@import "../ui/ui_table";
-@import "../ui/ui_pager";
+
 
 
 body{
@@ -43,25 +26,6 @@ body{
       max-width: 100%;
       box-shadow: 0 8px 30px 10px #f2f2f2;
     }
-  }
-}
-.wrap-gray{
-  background-color: #f8f8f8;
-}
-
-.tit-nor{
-  margin: 40px 0;
-  text-align: center;
-  h2{
-    font-size: 48px;
-    font-weight: normal;
-  }
-  .solid{
-    display: inline-block;
-    width: 40px;
-    height: 6px;
-    background-color: #3ec0b2;
-    border-radius: 5px;
   }
 }
 
@@ -196,4 +160,18 @@ body{
   }
 }
 
+
+// response for Mobile
+//================================================
+@media (max-width: 992px) {
+
+  //首页
+  //==================================================
+  .floor-img{
+    width: 300px;
+  }
+  .floor-1{
+    background-size: 50% 25%;
+  }
+}
 

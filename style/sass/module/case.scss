@@ -4,6 +4,10 @@
 * update: 2018/6/28
 */
 
+
+// import component css
+@import "../component/layout";
+
 .case-main {
   margin: 60px auto 100px;
   width: 100%;
@@ -54,6 +58,13 @@
     padding: 0 55px;
     background-color: #3ec0b2;
     border-radius: 4px;
+    color:#fff;
+    border: none;
+    &:hover{
+      color:#fff;
+      border: none;
+      background-color: #33a99c;
+    }
   }
   .case-lst{
     margin-bottom: 80px;
