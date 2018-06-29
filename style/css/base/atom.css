@@ -1,93 +1,239 @@
-/*
-Syntax error: File to import not found or unreadable: ../css3/css3.
-              Load paths:
-                E:/dev/Insmile/style/sass
-                D:/Program Files/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
-                D:/Program Files/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
-                D:/Program Files/compass.app/lib/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
-                D:/Program Files/compass.app/lib/ruby/compass_extensions/heygrady-compass-html5-boilerplate-4cc8815/stylesheets
-                D:/Program Files/compass.app/lib/ruby/compass_extensions/compass-h5bp/stylesheets
-                D:/Program Files/compass.app/lib/ruby/compass_extensions/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets
-                D:/Program Files/compass.app/lib/ruby/compass_extensions/susy-1.0.5/sass
-                D:/Program Files/compass.app/lib/ruby/compass_common/sassy-math-1.5/stylesheets
-                D:/Program Files/compass.app/lib/ruby/compass_common/modular-scale-1.0.6/stylesheets
-                D:/Program Files/compass.app/lib/ruby/compass_extensions/zurb-foundation-3.2.4/scss
-                Compass::SpriteImporter
-        on line 3 of E:/dev/Insmile/style/sass/base/_lib.scss
-        from line 1 of E:/dev/Insmile/style/sass/base/atom.scss
+@charset "UTF-8";
+/* color */
+.red {
+  color: #e04b43;
+}
 
-1: E:/dev/Insmile/style/sass/base/atom.scss
+.green {
+  color: #229900;
+}
 
-Backtrace:
-E:/dev/Insmile/style/sass/base/_lib.scss:3
-E:/dev/Insmile/style/sass/base/atom.scss:1
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/import_node.rb:67:in `import'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/import_node.rb:65:in `import'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/import_node.rb:28:in `imported_file'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/import_node.rb:36:in `css_import?'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/visitors/perform.rb:215:in `visit_import'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/visitors/perform.rb:225:in `visit_import'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/visitors/perform.rb:225:in `visit_import'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2339:in `collect'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/visitors/perform.rb:126:in `visit_root'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-org/jruby/RubyKernel.java:2109:in `send'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/tree/root_node.rb:20:in `render'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/engine.rb:315:in `_render'
-D:/Program Files/compass.app/lib/ruby/compass_common/sass-3.2.5/lib/sass/../sass/engine.rb:262:in `render'
-file:/D:/Program Files/compass.app/compass-app.jar!/compass_patch.rb:122:in `compile'
-D:/Program Files/compass.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-file:/D:/Program Files/compass.app/compass-app.jar!/compass_patch.rb:121:in `compile'
-D:/Program Files/compass.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-file:/D:/Program Files/compass.app/compass-app.jar!/compass_patch.rb:120:in `compile'
-D:/Program Files/compass.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-D:/Program Files/compass.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
-org/jruby/RubyArray.java:1620:in `each'
-D:/Program Files/compass.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
-D:/Program Files/compass.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-D:/Program Files/compass.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-D:/Program Files/compass.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-file:/D:/Program Files/compass.app/compass-app.jar!/compass_patch.rb:30:in `perform'
-org/jruby/RubyProc.java:270:in `call'
-org/jruby/RubyProc.java:220:in `call'
-D:/Program Files/compass.app/lib/ruby/jruby/fssm-0.2.9-tka-patched/lib/fssm/path.rb:73:in `run_callback'
-D:/Program Files/compass.app/lib/ruby/jruby/fssm-0.2.9-tka-patched/lib/fssm/path.rb:55:in `callback_action'
-D:/Program Files/compass.app/lib/ruby/jruby/fssm-0.2.9-tka-patched/lib/fssm/path.rb:39:in `delete'
-D:/Program Files/compass.app/lib/ruby/jruby/fssm-0.2.9-tka-patched/lib/fssm/state/directory.rb:32:in `deleted'
-org/jruby/RubyArray.java:1620:in `each'
-D:/Program Files/compass.app/lib/ruby/jruby/fssm-0.2.9-tka-patched/lib/fssm/state/directory.rb:31:in `deleted'
-D:/Program Files/compass.app/lib/ruby/jruby/fssm-0.2.9-tka-patched/lib/fssm/state/directory.rb:16:in `refresh'
-D:/Program Files/compass.app/lib/ruby/jruby/fssm-0.2.9-tka-patched/lib/fssm/backends/polling.rb:17:in `run'
-org/jruby/RubyArray.java:1620:in `each'
-D:/Program Files/compass.app/lib/ruby/jruby/fssm-0.2.9-tka-patched/lib/fssm/backends/polling.rb:17:in `run'
-org/jruby/RubyKernel.java:1439:in `loop'
-D:/Program Files/compass.app/lib/ruby/jruby/fssm-0.2.9-tka-patched/lib/fssm/backends/polling.rb:15:in `run'
-D:/Program Files/compass.app/lib/ruby/jruby/fssm-0.2.9-tka-patched/lib/fssm/monitor.rb:26:in `run'
-D:/Program Files/compass.app/lib/ruby/jruby/fssm-0.2.9-tka-patched/lib/fssm.rb:70:in `monitor'
-file:/D:/Program Files/compass.app/compass-app.jar!/compass_patch.rb:22:in `perform'
-D:/Program Files/compass.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-D:/Program Files/compass.app/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-file:/D:/Program Files/compass.app/compass-app.jar!/ui/tray.rb:420:in `watch'
-org/jruby/RubyProc.java:270:in `call'
-org/jruby/RubyProc.java:224:in `call'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: ../css3/css3.\A               Load paths:\A                 E:/dev/Insmile/style/sass\A                 D:/Program Files/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets\A                 D:/Program Files/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets\A                 D:/Program Files/compass.app/lib/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets\A                 D:/Program Files/compass.app/lib/ruby/compass_extensions/heygrady-compass-html5-boilerplate-4cc8815/stylesheets\A                 D:/Program Files/compass.app/lib/ruby/compass_extensions/compass-h5bp/stylesheets\A                 D:/Program Files/compass.app/lib/ruby/compass_extensions/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets\A                 D:/Program Files/compass.app/lib/ruby/compass_extensions/susy-1.0.5/sass\A                 D:/Program Files/compass.app/lib/ruby/compass_common/sassy-math-1.5/stylesheets\A                 D:/Program Files/compass.app/lib/ruby/compass_common/modular-scale-1.0.6/stylesheets\A                 D:/Program Files/compass.app/lib/ruby/compass_extensions/zurb-foundation-3.2.4/scss\A                 Compass::SpriteImporter\A         on line 3 of E:/dev/Insmile/style/sass/base/_lib.scss\A         from line 1 of E:/dev/Insmile/style/sass/base/atom.scss\A \A 1: E:/dev/Insmile/style/sass/base/atom.scss"; }
+.org {
+  color: #c79528;
+}
+
+.gray {
+  color: #666666;
+}
+
+.gray-light {
+  color: #999999;
+}
+
+/* box model */
+.mt5 {
+  margin-top: 5px;
+}
+
+.mr5 {
+  margin-right: 5px;
+}
+
+.mb5 {
+  margin-bottom: 5px;
+}
+
+.ml5 {
+  margin-left: 5px;
+}
+
+.pt5 {
+  padding-top: 5px;
+}
+
+.pr5 {
+  padding-right: 5px;
+}
+
+.pb5 {
+  padding-bottom: 5px;
+}
+
+.pl5 {
+  padding-left: 5px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.pt10 {
+  padding-top: 10px;
+}
+
+.pr10 {
+  padding-right: 10px;
+}
+
+.pb10 {
+  padding-bottom: 10px;
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
+.mr15 {
+  margin-right: 15px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.ml15 {
+  margin-left: 15px;
+}
+
+.pt15 {
+  padding-top: 15px;
+}
+
+.pr15 {
+  padding-right: 15px;
+}
+
+.pb15 {
+  padding-bottom: 15px;
+}
+
+.pl15 {
+  padding-left: 15px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.pt20 {
+  padding-top: 20px;
+}
+
+.pr20 {
+  padding-right: 20px;
+}
+
+.pb20 {
+  padding-bottom: 20px;
+}
+
+.pl20 {
+  padding-left: 20px;
+}
+
+/* layout */
+.posr {
+  position: relative;
+}
+
+.posa {
+  position: absolute;
+}
+
+.poss {
+  position: static;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.db {
+  display: block;
+}
+
+.di {
+  display: inline;
+}
+
+.dib {
+  display: inline-block;
+}
+
+.dtb {
+  display: table;
+}
+
+.vat {
+  vertical-align: top;
+}
+
+.vam {
+  vertical-align: middle;
+}
+
+.vab {
+  vertical-align: bottom;
+}
+
+.vatt {
+  vertical-align: text-top;
+}
+
+.vatb {
+  vertical-align: text-bottom;
+}
+
+.tal {
+  text-align: left;
+}
+
+.tac {
+  text-align: center;
+}
+
+.tar {
+  text-align: right;
+}
+
+.fll {
+  float: left;
+}
+
+.flr {
+  float: right;
+}
+
+.fln {
+  float: none;
+}
+
+.fwn {
+  font-weight: normal;
+}
+
+.fwb {
+  font-weight: bold;
+}

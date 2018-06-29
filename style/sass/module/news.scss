@@ -36,7 +36,7 @@
       font-size: 30px;
     }
     .news-txt{
-      max-height: 60px;
+      max-height: 115px;
       overflow: hidden;
       margin: 20px 0;
 
@@ -75,6 +75,9 @@
     .news-bd{
       .news-tit{
         margin-top: 0;
+      }
+      .news-txt{
+        max-height: 80px;
       }
     }
   }

@@ -8891,7 +8891,7 @@ body {
   font-size: 30px;
 }
 .news-lst .news-bd .news-txt {
-  max-height: 60px;
+  max-height: 115px;
   overflow: hidden;
   margin: 20px 0;
   font-size: 18px;
@@ -8919,5 +8919,8 @@ body {
   }
   .news-lst .news-bd .news-tit {
     margin-top: 0;
+  }
+  .news-lst .news-bd .news-txt {
+    max-height: 80px;
   }
 }
