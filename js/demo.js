@@ -366,40 +366,7 @@ $(function(){
 
 
     // 切换轮播
-    var bannerCell;
-    bannerCell = $('.album li');
-    // 页面渲染让第一个轮播图放在首屏
-    bannerCell.eq(0).show();
-    // 遍历轮播图一共多少个，然后遍历，添加同样个数的指示器
-    $.each(bannerCell,function(){
-        var indicatorCell = '<div></div>';
-        $('.indicator').append(indicatorCell);
-    });
-    // 遍历指示器，添加点击事件
-    $('.indicator>div').each(function(){
-
-        $(this).click(function(){
-            $(this).css('background','#fff').siblings().css('background','#ccc');
-
-            var index = $(this).index();
-            var bannerCellIndex = $('.banner-cell').eq(index);
-            // jquery的animate动画函数
-            bannerCellIndex.animate({
-                opacity:0
-            },function(){
-
-                bannerCellIndex.css({
-                    'z-index': 1,
-                    'opacity': 1
-                });
-
-                bannerCellIndex.siblings().css({
-                    'z-index':'2'
-                })
-
-            })
-        })
-    })
+    //todo
 
 
 
