@@ -264,9 +264,12 @@
 
 <div class="mask js-mask" style="display: none;"></div>
 <div class="pop-album js-pop-album" style="display: none;">
+    <span class="pop-close js-pop-close"></span>
+    <span class="pop-album-pre js-pre"></span>
     <ul class="album">
       <li></li>
     </ul>
+    <span class="pop-album-next js-next"></span>
 </div>
 
 
@@ -313,6 +316,8 @@
             <% }) %>
 </script>
 <script type='text/template' id='tpl1'>
+    <span class="pop-close js-pop-close"></span>
+    <span class="pop-album-pre js-pre"></span>
     <ul class="album">
         <% _.each(images, function(item, index, a){ %>
         <% if (index === 0){ %>
@@ -324,6 +329,7 @@
         </li>
         <% }) %>
     </ul>
+    <span class="pop-album-next js-next"></span>
 </script>
 </body>
 </html>

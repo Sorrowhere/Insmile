@@ -8702,7 +8702,7 @@ body {
 }
 
 .mask {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 998;
@@ -8960,7 +8960,7 @@ body {
 }
 
 .pop-album {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   z-index: 999;
@@ -8979,8 +8979,12 @@ body {
   text-align: center;
   vertical-align: middle;
 }
-.pop-album .album li:before, .pop-album .album li:after {
-  content: " ";
+.pop-album .album li img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.pop-album .pop-album-pre,
+.pop-album .pop-album-next {
   display: block;
   width: 22px;
   height: 100px;
@@ -8988,17 +8992,32 @@ body {
   top: 225px;
   background: url("../../../img/contact/album_arrow.png") no-repeat;
   cursor: pointer;
+  opacity: .7;
 }
-.pop-album .album li:before {
+.pop-album .pop-album-pre:hover,
+.pop-album .pop-album-next:hover {
+  opacity: 1;
+}
+.pop-album .pop-album-pre {
   left: -50px;
 }
-.pop-album .album li:after {
+.pop-album .pop-album-next {
   background-position: -22px 0;
   right: -50px;
 }
-.pop-album .album li img {
-  max-width: 100%;
-  max-height: 100%;
+.pop-album .pop-close {
+  position: absolute;
+  top: -19px;
+  right: -35px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../../../img/close.png") no-repeat;
+  cursor: pointer;
+  opacity: .8;
+}
+.pop-album .pop-close:hover {
+  opacity: 1;
 }
 
 @media (max-width: 992px) {
