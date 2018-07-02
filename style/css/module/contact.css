@@ -8964,10 +8964,22 @@ body {
   top: 50%;
   left: 50%;
   z-index: 999;
-  width: 600px;
+  width: 700px;
   height: 600px;
+  padding: 0 50px;
   margin-top: -300px;
   margin-left: -300px;
+  overflow: hidden;
+}
+.pop-album .album-outer {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.pop-album .album-inner {
+  position: absolute;
 }
 .pop-album .album {
   display: table;
@@ -8990,6 +9002,7 @@ body {
   height: 100px;
   position: absolute;
   top: 225px;
+  z-index: 99;
   background: url("../../../img/contact/album_arrow.png") no-repeat;
   cursor: pointer;
   opacity: .7;
@@ -8999,16 +9012,17 @@ body {
   opacity: 1;
 }
 .pop-album .pop-album-pre {
-  left: -50px;
+  left: 0;
 }
 .pop-album .pop-album-next {
   background-position: -22px 0;
-  right: -50px;
+  right: 0;
 }
 .pop-album .pop-close {
   position: absolute;
-  top: -19px;
-  right: -35px;
+  top: 0px;
+  right: 0;
+  z-index: 99;
   display: block;
   width: 32px;
   height: 32px;

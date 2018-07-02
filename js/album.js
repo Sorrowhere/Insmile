@@ -1,18 +1,18 @@
-$(function(){
+$(function () {
     var dataSource = {
         'beijing': [
             {
                 area: '中国华北总部',
-                shopName:'北京总店',
-                name:'王嘉池',
-                image:'../img/contact/beijing/wangjiachi/1.jpg',
+                shopName: '北京总店',
+                name: '王嘉池',
+                image: '../img/contact/beijing/wangjiachi/1.jpg',
             },
             {
                 area: '',
-                shopName:'国锐金嵿店',
-                name:'孙程程',
-                image:'../img/contact/beijing/sunchengcheng/1.jpg',
-                moreImages:[
+                shopName: '国锐金嵿店',
+                name: '孙程程',
+                image: '../img/contact/beijing/sunchengcheng/1.jpg',
+                moreImages: [
                     '../img/contact/beijing/sunchengcheng/2.jpg',
                     '../img/contact/beijing/sunchengcheng/3.jpg',
                     '../img/contact/beijing/sunchengcheng/4.jpg',
@@ -20,40 +20,40 @@ $(function(){
                 ],
             },
             {
-                shopName:'中关村店',
-                name:'刘祯',
-                image:'../img/contact/beijing/liuzhen/1.jpg',
-                moreImages:[
+                shopName: '中关村店',
+                name: '刘祯',
+                image: '../img/contact/beijing/liuzhen/1.jpg',
+                moreImages: [
                     '../img/contact/beijing/liuzhen/2.jpg',
                 ],
             },
             {
-                shopName:'中关村店',
-                name:'张蕾',
-                image:'../img/contact/beijing/zhanglei/1.jpg',
-                moreImages:[
+                shopName: '中关村店',
+                name: '张蕾',
+                image: '../img/contact/beijing/zhanglei/1.jpg',
+                moreImages: [
                     '../img/contact/beijing/zhanglei/2.jpg',
                 ],
             },
             {
-                shopName:'万科城市之光店',
-                name:'张兰兰',
-                image:'../img/contact/beijing/zhanglanlan/1.jpg',
-                moreImages:['../img/contact/beijing/zhanglanlan/2.jpg'],
+                shopName: '万科城市之光店',
+                name: '张兰兰',
+                image: '../img/contact/beijing/zhanglanlan/1.jpg',
+                moreImages: ['../img/contact/beijing/zhanglanlan/2.jpg'],
             },
         ],
         'shanghai': [
             {
-                shopName:'青浦卓越世纪中心店',
-                name:'吉丽雯',
-                image:'../img/contact/shanghai/jiliwen/1.jpg',
-                moreImages:[],
+                shopName: '青浦卓越世纪中心店',
+                name: '吉丽雯',
+                image: '../img/contact/shanghai/jiliwen/1.jpg',
+                moreImages: [],
             },
             {
-                shopName:'尚光徐汇店',
-                name:'戴凌',
-                image:'../img/contact/shanghai/dailing/1.jpg',
-                moreImages:[
+                shopName: '尚光徐汇店',
+                name: '戴凌',
+                image: '../img/contact/shanghai/dailing/1.jpg',
+                moreImages: [
                     '../img/contact/shanghai/dailing/2.jpg',
                     '../img/contact/shanghai/dailing/3.jpg',
                     '../img/contact/shanghai/dailing/4.jpg',
@@ -67,10 +67,10 @@ $(function(){
                 ],
             },
             {
-                shopName:'青浦卓越世纪中心店',
-                name:'孙梦鸽',
-                image:'../img/contact/shanghai/sunmengge/1.jpg',
-                moreImages:[
+                shopName: '青浦卓越世纪中心店',
+                name: '孙梦鸽',
+                image: '../img/contact/shanghai/sunmengge/1.jpg',
+                moreImages: [
                     '../img/contact/shanghai/sunmengge/2.jpg',
                     '../img/contact/shanghai/sunmengge/3.jpg',
                     '../img/contact/shanghai/sunmengge/4.jpg',
@@ -79,10 +79,10 @@ $(function(){
                 ],
             },
             {
-                shopName:'七宝万科国际店',
-                name:'郁金婷',
-                image:'../img/contact/shanghai/yujingting/1.jpg',
-                moreImages:[
+                shopName: '七宝万科国际店',
+                name: '郁金婷',
+                image: '../img/contact/shanghai/yujingting/1.jpg',
+                moreImages: [
                     '../img/contact/shanghai/yujingting/2.jpg',
                     '../img/contact/shanghai/yujingting/3.jpg',
                     '../img/contact/shanghai/yujingting/4.jpg',
@@ -91,57 +91,56 @@ $(function(){
         ],
         'shenzhen': [
             {
-                shopName:'深圳中心店',
-                name:'陈希桐',
-                image:'../img/contact/shenzhen/chenxitong/1.jpg',
-                moreImages:[
-                    '../img/contact/shenzhen/yujingting/2.jpg',
-                    '../img/contact/shenzhen/yujingting/3.jpg',
+                shopName: '深圳中心店',
+                name: '陈希桐',
+                image: '../img/contact/shenzhen/chenxitong/1.jpg',
+                moreImages: [
+                    '../img/contact/shenzhen/chenxitong/2.jpg',
+                    '../img/contact/shenzhen/chenxitong/3.jpg',
                 ],
             },
             {
-                shopName:'深圳宝安店',
-                name:'蔡春晓',
-                image:'../img/contact/shenzhen/caichunxiao/1.jpg',
-                moreImages:[
+                shopName: '深圳宝安店',
+                name: '蔡春晓',
+                image: '../img/contact/shenzhen/caichunxiao/1.jpg',
+                moreImages: [
                     '../img/contact/shenzhen/caichunxiao/2.jpg',
-                    '../img/contact/shenzhen/caichunxiao/3.jpg',
                 ],
             },
             {
-                shopName:'龙岗区单店',
-                name:'李嘉玲',
-                image:'../img/contact/shenzhen/lijialing/1.jpg',
-                moreImages:[],
+                shopName: '龙岗区单店',
+                name: '李嘉玲',
+                image: '../img/contact/shenzhen/lijialing/1.jpg',
+                moreImages: [],
             },
             {
-                shopName:'华强店',
-                name:'刘少霞',
-                image:'../img/contact/shenzhen/liushaoxia/1.jpg',
-                moreImages:[],
+                shopName: '华强店',
+                name: '刘少霞',
+                image: '../img/contact/shenzhen/liushaoxia/1.jpg',
+                moreImages: [],
             },
             {
-                shopName:'华强店',
-                name:'姚少琼',
-                image:'../img/contact/shenzhen/yaoshaoqiong/1.jpg',
-                moreImages:[],
+                shopName: '华强店',
+                name: '姚少琼',
+                image: '../img/contact/shenzhen/yaoshaoqiong/1.jpg',
+                moreImages: [],
             },
             {
-                shopName:'龙华新区店',
-                name:'黄瑶',
-                image:'../img/contact/shenzhen/huangyao/1.jpg',
-                moreImages:[
-                    '../img/contact/shanghai/huangyao/2.jpg',
-                    '../img/contact/shanghai/huangyao/3.jpg',
+                shopName: '龙华新区店',
+                name: '黄瑶',
+                image: '../img/contact/shenzhen/huangyao/1.jpg',
+                moreImages: [
+                    '../img/contact/shenzhen/huangyao/2.jpg',
+                    '../img/contact/shenzhen/huangyao/3.jpg',
                 ],
             },
         ],
         'jinan': [
             {
-                shopName:'祥泰广场店',
-                name:'王路遥',
-                image:'../img/contact/jinan/wangluyao/1.jpg',
-                moreImages:[
+                shopName: '祥泰广场店',
+                name: '王路遥',
+                image: '../img/contact/jinan/wangluyao/1.jpg',
+                moreImages: [
                     '../img/contact/jinan/wangluyao/2.jpg',
                     '../img/contact/jinan/wangluyao/3.jpg',
                     '../img/contact/jinan/wangluyao/4.jpg',
@@ -152,10 +151,10 @@ $(function(){
                 ],
             },
             {
-                shopName:'名郡商务港店',
-                name:'王路遥&曹瑾',
-                image:'../img/contact/jinan/caojing/1.jpg',
-                moreImages:[
+                shopName: '名郡商务港店',
+                name: '王路遥&曹瑾',
+                image: '../img/contact/jinan/caojing/1.jpg',
+                moreImages: [
                     '../img/contact/jinan/caojing/2.jpg',
                     '../img/contact/jinan/caojing/3.jpg',
                 ],
@@ -163,10 +162,10 @@ $(function(){
         ],
         'nanjing': [
             {
-                shopName:'雨花区紫荆国际店',
-                name:'林超',
-                image:'../img/contact/nanjing/linchao/1.jpg',
-                moreImages:[
+                shopName: '雨花区紫荆国际店',
+                name: '林超',
+                image: '../img/contact/nanjing/linchao/1.jpg',
+                moreImages: [
                     '../img/contact/nanjing/linchao/2.jpg',
                     '../img/contact/nanjing/linchao/3.jpg',
                 ],
@@ -174,26 +173,26 @@ $(function(){
         ],
         'chengdu': [
             {
-                shopName:'高新店',
-                name:'杨雪帆',
-                image:'../img/contact/chengdu/yangxuefan/1.jpg',
-                moreImages:[
+                shopName: '高新店',
+                name: '杨雪帆',
+                image: '../img/contact/chengdu/yangxuefan/1.jpg',
+                moreImages: [
                     '../img/contact/chengdu/yangxuefan/2.jpg',
                     '../img/contact/chengdu/yangxuefan/3.jpg',
                     '../img/contact/chengdu/yangxuefan/4.jpg',
                 ],
             },
             {
-                shopName:'高新店',
-                name:'徐小傑',
-                image:'../img/contact/chengdu/xuxiaojie/1.jpg',
-                moreImages:[],
+                shopName: '高新店',
+                name: '徐小傑',
+                image: '../img/contact/chengdu/xuxiaojie/1.jpg',
+                moreImages: [],
             },
             {
-                shopName:'高新店',
-                name:'刘咏静',
-                image:'../img/contact/chengdu/liuyongjing/1.jpg',
-                moreImages:[
+                shopName: '高新店',
+                name: '刘咏静',
+                image: '../img/contact/chengdu/liuyongjing/1.jpg',
+                moreImages: [
                     '../img/contact/chengdu/liuyongjing/2.jpg',
                     '../img/contact/chengdu/liuyongjing/3.jpg',
                     '../img/contact/chengdu/liuyongjing/4.jpg',
@@ -204,10 +203,10 @@ $(function(){
         ],
         'xian': [
             {
-                shopName:'金域国际店',
-                name:'崔瑾',
-                image:'../img/contact/xian/cuijing/1.jpg',
-                moreImages:[
+                shopName: '金域国际店',
+                name: '崔瑾',
+                image: '../img/contact/xian/cuijing/1.jpg',
+                moreImages: [
                     '../img/contact/xian/cuijing/2.jpg',
                     '../img/contact/xian/cuijing/3.jpg',
                 ],
@@ -215,37 +214,37 @@ $(function(){
         ],
         'ningbo': [
             {
-                shopName:'余姚店',
-                name:'丁丁',
-                image:'../img/contact/ningbo/dingding/1.jpg',
-                moreImages:[],
+                shopName: '余姚店',
+                name: '丁丁',
+                image: '../img/contact/ningbo/dingding/1.jpg',
+                moreImages: [],
             },
         ],
         'dalian': [
             {
-                shopName:'金普新区店',
-                name:'顾文静',
-                image:'../img/contact/dalian/guwenjing/1.jpg',
-                moreImages:[
+                shopName: '金普新区店',
+                name: '顾文静',
+                image: '../img/contact/dalian/guwenjing/1.jpg',
+                moreImages: [
                     '../img/contact/dalian/guwenjing/2.jpg',
                 ],
             },
         ],
         'suzhou': [
             {
-                shopName:'华旭大厦店',
-                name:'沈滔',
-                image:'../img/contact/suzhou/shentao/1.jpg',
-                moreImages:[
+                shopName: '华旭大厦店',
+                name: '沈滔',
+                image: '../img/contact/suzhou/shentao/1.jpg',
+                moreImages: [
                     '../img/contact/suzhou/shentao/2.jpg',
                     '../img/contact/suzhou/shentao/3.jpg',
                 ],
             },
             {
-                shopName:'华旭大厦店',
-                name:'李雯雯',
-                image:'../img/contact/suzhou/liwenwen/1.jpg',
-                moreImages:[
+                shopName: '华旭大厦店',
+                name: '李雯雯',
+                image: '../img/contact/suzhou/liwenwen/1.jpg',
+                moreImages: [
                     '../img/contact/suzhou/liwenwen/2.jpg',
                     '../img/contact/suzhou/liwenwen/3.jpg',
                 ],
@@ -253,70 +252,70 @@ $(function(){
         ],
         'dezhou': [
             {
-                shopName:'德城区店',
-                name:'秦硕蔓',
-                image:'../img/contact/suzhou/liwenwen/1.jpg',
-                moreImages:[],
+                shopName: '德城区店',
+                name: '秦硕蔓',
+                image: '../img/contact/dezhou/qinshuoman/1.jpg',
+                moreImages: [],
             },
         ],
         'tangshan': [
             {
-                shopName:'唐山店',
-                name:'侯欣宇',
-                image:'../img/contact/tangshan/houxinyu/1.jpg',
-                moreImages:[
+                shopName: '唐山店',
+                name: '侯欣宇',
+                image: '../img/contact/tangshan/houxinyu/1.jpg',
+                moreImages: [
                     '../img/contact/tangshan/houxinyu/2.jpg',
                 ],
             },
             {
-                shopName:'唐山店',
-                name:'张旭',
-                image:'../img/contact/tangshan/zhangxu/1.jpg',
-                moreImages:[
+                shopName: '唐山店',
+                name: '张旭',
+                image: '../img/contact/tangshan/zhangxu/1.jpg',
+                moreImages: [
                     '../img/contact/tangshan/zhangxu/2.jpg',
                 ],
             },
         ],
         'zhengzhou': [
             {
-                shopName:'万达中心店',
-                name:'小媛',
-                image:'../img/contact/zhengzhou/xiaoyuan/1.jpg',
-                moreImages:[],
+                shopName: '万达中心店',
+                name: '小媛',
+                image: '../img/contact/zhengzhou/xiaoyuan/1.jpg',
+                moreImages: [],
             },
             {
-                shopName:'万达中心店',
-                name:'小萌',
-                image:'../img/contact/zhengzhou/xiaomeng/1.jpg',
-                moreImages:[],
+                shopName: '万达中心店',
+                name: '小萌',
+                image: '../img/contact/zhengzhou/xiaomeng/1.jpg',
+                moreImages: [],
             },
             {
-                shopName:'万达中心店',
-                name:'小海',
-                image:'../img/contact/zhengzhou/xiaohai/1.jpg',
-                moreImages:[],
+                shopName: '万达中心店',
+                name: '小海',
+                image: '../img/contact/zhengzhou/xiaohai/1.jpg',
+                moreImages: [],
             },
         ],
         'yanan': [
             {
-                shopName:'延安店',
-                name:'小媛',
-                image:'../img/contact/yanan/xiaoyuan/1.jpg',
-                moreImages:[],
+                shopName: '延安店',
+                name: '小媛',
+                image: '../img/contact/yanan/xiaoyuan/1.jpg',
+                moreImages: [],
             },
             {
-                shopName:'延安店',
-                name:'小萌',
-                image:'../img/contact/yanan/xiaomeng/1.jpg',
-                moreImages:[],
+                shopName: '延安店',
+                name: '小萌',
+                image: '../img/contact/yanan/xiaomeng/1.jpg',
+                moreImages: [],
             },
         ],
         'zunyi': [
             {
-                shopName:'桐梓店',
-                name:'陈晓洁',
-                image:'../img/contact/zunyi/chenxiaojie/1.jpg',
-                moreImages:[],
+                shopName: '桐梓店',
+                name: '陈晓洁',
+                image: '../img/contact/zunyi/chenxiaojie/1.jpg',
+                moreImages: [],
             },
         ],
     };
@@ -325,38 +324,53 @@ $(function(){
     var currentCity = 'beijing'
     var currentData = dataSource[currentCity];
     var compiled = _.template($('#tpl').html());
-    var str = compiled({data:currentData});
+    var str = compiled({data: currentData});
     $('.js-node').html(str);
 
 // 切换城市
     var $filterWrapper = $('.js-filter');
-    $filterWrapper.on('click','a',function(){
+    $filterWrapper.on('click', 'a', function () {
         currentCity = $(this).attr('data-id');
         currentData = dataSource[currentCity];
         compiled = _.template($('#tpl').html());
-        str = compiled({data:currentData});
+        str = compiled({data: currentData});
         $('.js-node').html(str);
     });
 
 // 查看更多
-    $(document).on('click','.js-more',function(){
+    $(document).on('click', '.js-more', function () {
         var moreImagesCompiled = '';
         var moreImagesCompiledStr = ''
         var index = $(this).attr('data-index');
-        var curentPerson = currentData[index]
-        if (curentPerson.moreImages && curentPerson.moreImages.length > 0 ) {
+        var curentPerson = currentData[index];
+
+
+        if (curentPerson.moreImages && curentPerson.moreImages.length > 0) {
             moreImagesCompiled = _.template($('#tpl1').html());
-            moreImagesCompiledStr = moreImagesCompiled({images:curentPerson.moreImages});
+            moreImagesCompiledStr = moreImagesCompiled({images: curentPerson.moreImages});
             $('.js-pop-album').html(moreImagesCompiledStr);
             $('.js-mask').show();
 
-            $('.js-pop-album').show()
-        }
+            $('.js-pop-album').show();
+
+            var $albumBox = $('.album-inner');
+            if( $albumBox.find('.album li').length == 1){
+                $('.js-pre,.js-next').hide();
+            } else{
+                $('.js-pre,.js-next').show();
+            }
+            var albumBoxWidth = $('.album li').length * 600;
+            $albumBox.css('width',albumBoxWidth );
+
+        };
+
+
+
     });
 
 
 // 关闭弹层
-    $(document).on('click','.js-pop-close',function(){
+    $(document).on('click', '.js-pop-close', function () {
         $('.js-mask').hide();
 
         $('.js-pop-album').hide()
@@ -364,7 +378,38 @@ $(function(){
 
 
 // 切换轮播
-//todo
+
+    $(document).on('click', '.js-next', function () {
+        var item = $(".album-inner");
+        var item_width = $(".album-outer").width();		 //获取滚动element父元素的宽度
+        var $albumBox = $('.album-inner').width() - 600;
+
+        var pos= item.position();					 //获取当前位置
+        if(!item.is(":animated")){
+            if(pos.left == -($albumBox)){              //如果当前位置Left等于滚动盒子宽度的负值，返回到首页
+                item.animate({left:"0px"},1000)
+            }else{
+                item.animate({left:'-='+item_width},1000);
+            }
+        }
+    });
+
+
+    $(document).on('click', '.js-pre', function () {
+        var item = $(".album-inner");
+        var item_width = $(".album-outer").width();		 //获取滚动element父元素的宽度
+
+        var $albumBox = $('.album-inner').width() - 600;
+
+        var pos= item.position();					 //获取当前位置
+        if(!item.is(":animated")){
+            if(pos.left == 0){              //如果当前位置Left等于滚动盒子宽度的负值，返回到首页
+                item.animate({left:-($albumBox)},1000)
+            }else{
+                item.animate({left:'+='+item_width},1000);
+            }
+        }
+    });
 
 
 
