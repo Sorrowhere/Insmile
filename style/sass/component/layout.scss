@@ -148,19 +148,22 @@ body{
     position: relative;
     .nav-lst{
       position: absolute;
-      top:60px;
+      top:75px;
       right: -5px;
       z-index: 99;
 
       display: none;
-      padding: 10px 40px;
+      padding: 10px 50px;
       background-color: #fff;
       box-shadow:2px 3px 10px 2px #ddd;
       li{
         float: none;
       }
       a{
+        padding: 10px 0;
+        margin-bottom: 15px;
         margin-left: 0;
+
         text-align: center;
       }
     }

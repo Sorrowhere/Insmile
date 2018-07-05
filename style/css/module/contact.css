@@ -8788,11 +8788,11 @@ body {
   }
   .nav .nav-lst {
     position: absolute;
-    top: 60px;
+    top: 75px;
     right: -5px;
     z-index: 99;
     display: none;
-    padding: 10px 40px;
+    padding: 10px 50px;
     background-color: #fff;
     box-shadow: 2px 3px 10px 2px #dddddd;
   }
@@ -8800,6 +8800,8 @@ body {
     float: none;
   }
   .nav .nav-lst a {
+    padding: 10px 0;
+    margin-bottom: 15px;
     margin-left: 0;
     text-align: center;
   }
@@ -9035,6 +9037,12 @@ body {
 }
 
 @media (max-width: 992px) {
+  .filter a {
+    height: 48px;
+    line-height: 48px;
+    font-size: 24px;
+  }
+
   .mode-img {
     width: 300px;
   }
